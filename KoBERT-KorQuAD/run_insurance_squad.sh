@@ -1,0 +1,1 @@
+python run_squad.py --exp_name kobert_insurance --model_type kobert --model_name_or_path monologg/kobert --output_dir runs --data_dir data --train_file augmented_insurance.json --predict_file insurance_test.json --evaluate_during_training --per_gpu_train_batch_size 32 --per_gpu_eval_batch_size 32 --max_seq_length 512 --logging_steps 100 --save_steps 100 --do_train --threads 4

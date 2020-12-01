@@ -1,4 +1,4 @@
-# Question Generation for MRC
+# Neural Data Augmentation for MRC
 
 This is a project repository for Integrated Creative Design, Fall 2020.  
 Below, we explain how to augment QA data from insurance document (stored in `dataset/insurance`), and train QA model on the augmented dataset.
@@ -32,9 +32,10 @@ Data augmentation for KorQuAD is similar to the insurance documents. Just make s
 
 
 ## Evaluation
-We fine-tune KoBERT to test QA model with our augmented data. The instruction below illustrates how to train KoBERT only with the augmented dataset (and not using KorQuAD train set at all), then evaluating on KorQuAD dev set.
+We fine-tune KoBERT to test QA model with our augmented data. The instruction below illustrates how to train KoBERT / Insurance Document QA with the augmented dataset, then evaluating on KorQuAD dev set / Insurance Document Test Set.
 
-(1)  
+(1) `cd KoBERT-KorQuAD; pip install -r requirements.txt`  
+(2) Move your augmented json file into `KoBERT-KorQuAD/data/`. To save time, I also provide [augmented dataset](https://drive.google.com/file/d/1j5GqfEXNaeGECBMCcKSq8Tc1fsQs3O0J/view?usp=sharing) for training. Download this and move it to `KoBERT-KorQuAD/data/`.  
+(3) For insurance documents, run `sh run_insurance_squad.sh`.  
+(4) For KorQuAD, run `sh run_squad.sh`.
 
-## References
-Garcia-Duran. A, Dumancic. S, and Niepert. M, Learning Sequence Encoders for Temporal Knowledge Graph Completion. EMNLP 2018
