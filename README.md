@@ -11,6 +11,7 @@ Below, we explain how to augment QA data from insurance document (stored in `dat
 (3) Run `python insurance_pipeline.py` to create preprocessed paragraphs / cloze sequences / answers from the insurance documents.
 
 ## 2. Question Generation
+![Question Generation](https://raw.githubusercontent.com/sharkmir1/integrated_creative_design/main/translation.png)
 (1) `cd UnsupervisedMT/NMT`  
 (2) Download [data.zip](https://drive.google.com/file/d/1JNwb4tPGaoTrlERqL5WVDZ4V_vayYZZ3/view?usp=sharing), and unzip it into `mono_qa_new` and `para_qa_new` folders. Move the two folders into `UnsupervisedMT/NMT/data/`.  
 (3) Download pretrained [UNMT model](https://drive.google.com/file/d/1q-OqeQj_2NR5C_0wysFn82egUVkP8-8J/view?usp=sharing), and unzip it into `dumped` folder. Move the folder into `UnsupervisedMT/NMT/`.  
