@@ -128,3 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
+/UnsupervisedMT/NMT/dumped/
+/UnsupervisedMT/NMT/data/mono_qa_new/
+/UnsupervisedMT/NMT/data/para_qa_new/
+/ner/experiments/base_model_with_crf/best-epoch-16-step-1500-acc-0.993.bin

@@ -10,8 +10,6 @@ from ner.data_utils.utils import Config
 from ner.data_utils.vocab_tokenizer import Tokenizer
 from ner.data_utils.pad_sequence import keras_pad_fn
 
-import ipdb
-
 
 class DecoderFromNamedEntitySequence:
     def __init__(self, tokenizer, index_to_ner):
@@ -212,4 +210,3 @@ if __name__ == "__main__":
 
     prepared_inputs = prepare()
     entities, clozes, starting_indices = paragraph_to_cloze(prepared_inputs, paragraph)
-    ipdb.set_trace()

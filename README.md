@@ -1,4 +1,4 @@
-## Question Generation for MRC
+# Question Generation for MRC
 
 This is a project repository for Integrated Creative Design, Fall 2020.  
 Below, we explain how to augment QA data from insurance document (stored in `dataset/insurance`), and train QA model on the augmented dataset.
@@ -15,10 +15,13 @@ Below, we explain how to augment QA data from insurance document (stored in `dat
 (4) Preprocess the cloze sequence file by running `./get_data_insurance_inference.sh`.  
 (5) Translate from cloze to question by running `./insurance_inference.sh`. This will generate output question file in `UnsupervisedMT/NMT/data/clozes`.
 
+\# Troubleshooting
+- If any permission error occurs, make sure that all files are given 777 permission, by running   
+`chmod +777 {get_data_insurance_inference.sh, insurance_inference.sh, preprocess.py}`.
+
 ## 3. Putting all together: Creating SQuAD-style dataset
 (1) `cd {Project base folder}`  
 (2) Run `python insurance_generate_squad.py`. This will generate SQuAD-style dataset in `dataset/KorQUAD/augmented_insurance.json`.  
-
 
 
 

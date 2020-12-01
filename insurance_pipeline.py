@@ -7,7 +7,7 @@ import pickle
 
 from ner.generate_cloze import prepare, paragraph_to_cloze
 
-
+import ipdb
 
 PARAGRAPH_THRESHOLD = 300
 FILE_LIST = [f"dataset/insurance/{f}" for f in os.listdir("dataset/insurance") if f.endswith(".txt")]

@@ -1,6 +1,6 @@
 MONO_DATASET='cl:./data/mono_qa_new/all.cl.tok.60000.pth,,;qu:./data/mono_qa_new/all.qu.tok.60000.pth,,'
 PARA_DATASET='cl-qu:,./data/para_qa_new/dev.XX.tok.60000.pth,./data/para_qa_new/dev.XX.tok.60000.pth'
-INFERENCE_DATASET='./data/clozes/dev.insurance.tok.60000.pth'
+INFERENCE_DATASET='./data/clozes/dev_insurance.cl.tok.60000.pth'
 PRETRAINED='./data/mono_qa_new/all.cl-qu.60000.vec'
 INFERENCE_NUM='_insurance'
 
