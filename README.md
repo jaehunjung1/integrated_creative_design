@@ -4,6 +4,8 @@ This is a project repository for Integrated Creative Design, Fall 2020.
 Below, we explain how to augment QA data from insurance document (stored in `dataset/insurance`), and train QA model on the augmented dataset.
 
 ## 1. Answer Span Selection
+![Answer Selection](https://raw.githubusercontent.com/sharkmir1/integrated_creative_design/main/answer.png)
+
 (1) `cd ner; pip install -r requirements.txt`  
 (2) Download pretrained [NER model](https://drive.google.com/open?id=1FDLe3SUOVG7Xkh5mzstCWWTYZPtlOIK8) into `ner/experiments/base_model_with_crf`.  
 (3) Run `python insurance_pipeline.py` to create preprocessed paragraphs / cloze sequences / answers from the insurance documents.
